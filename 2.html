@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+ <head>
+	<title>Dating Website</title>
+	<style>
+		#preview {
+			display: none;
+			}
+	
+		#country {
+			max-width: 300px;
+			width: 200px;
+		}
+
+		fieldset {
+			background: lightyellow;
+			border: 10px solid yellow;
+			margin-bottom: 10px;
+			width: 720px;
+		}
+
+		label {
+			width: 180px;
+			display: inline-block;
+			text-align: right;
+			text-align: top;
+		}
+
+		textarea {
+			width: 360px;
+			height: 50px;
+		}
+
+		.radio-check {
+			width: auto;
+		}
+
+		.label-range {
+			width: auto;
+			text-align: center;
+		}
+	</style>
+</head>
+	<body>
+		<h1>Please Enter Your Details For Our Dating Website!</h1>
+	<form>
+		<fieldset>
+  			<legend>Your Face</legend>
+  			<label for="avatar">Your image:</label>
+  			<input type="file" id="avatar" name="avatar" required>
+  			<br>
+  			<label for="preview">Image Preview:</label>
+  			<img id="preview" name="preview" src="">
+		</fieldset>
+		
+		<fieldset>
+  			<legend>Your General Details</legend>
+ 			 <label for="name">Name:</label>
+  			<input type="text" name="name"/>
+  			<br>
+  			<label for="gender" class="radio-check">
+   			 Gender:
+  			</label>
+  			<input type="radio" name="gender" value="male">Male
+  			<input type="radio" name="gender" value="female">Female
+ 			 <br>
+  			<label for="age">Age:</label>
+  			<input type="number" name="age" value="18">
+ 			 <br>
+  			<label for="birthdate">Date of birth:</label>
+  			<input type="date" name="birthdate">
+  			<br>
+  			<label for="color">Favorite color:</label>
+  			<input type="color" name="color">
+  			<br>
+  			<label for="country">Which country:</label>
+  			<select name="country" id="country">
+   			<option></option>
+    			<option value="nepal">Nepal</option>
+    			<option value="india">India</option>
+    			<option value="srilanka">Srilanka</option>
+    			<option value="indonesia">Indonesia</option>
+    			<option value="pakistan">Pakistan</option>
+  			</select>
+		</fieldset>
+
+		<fieldset>
+  			<legend>Your Indicators</legend>
+  			<label for="height">Height:</label>
+  			<label class="label-range">Short</label>
+  			<input type="range" name="height" min="0" max="100"/>
+ 			<label class="label-range">Tall</label>
+  			<br>
+  			<label for="salary">Salary:</label>
+  			<label class="label-range">Poor</label>
+  			<input type="range" name="salary" min="0" max="100"/>
+  			<label class="label-range">Rich</label>
+		</fieldset>
+
+		<fieldset>
+  			<legend>Your Contact Information</legend>
+  			<label for="email">Email:</label>
+  			<input type="email" name="email">
+  			<br>
+  			<label for="tel">Mobile:</label>
+  			<input type="tel" name="tel">
+  			<br>
+  			<label for="address">Address:</label>
+  			<textarea name="address"></textarea>
+  			<br>
+  			<label for="method" class="radio-check">
+   		 	Method to contact you:
+  			</label>
+  			<input type="checkbox" name="method">Email
+  			<input type="checkbox" name="method">Whatsapp
+  			<input type="checkbox" name="method">In-app chat
+		</fieldset>
+			<input type="submit" value="Submit!">
+		</form>
+	</body>
+</html>
+
+
+
+

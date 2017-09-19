@@ -1,0 +1,48 @@
+<DOCTYPE HTML>
+<html>
+<body> 
+  <h1> Please Enter Your Details For Our Dating Website! </h1>
+ <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="POST" enctype="multipart/form-data">
+<fieldset>  
+	<label for="avatar">Your Image:</label>
+    <input type="file" id="avatar" name="avatar" required><br>
+     Image preview: <img id="Preview">
+</fieldset>
+<fieldset>
+	<legend>Your general details</legend>
+	<label for="name">Name :</label><input type= "text" required><br>
+	<label for="gender">Gender :</label><input type="radio" name="gender" value="male"  required> Male 
+	<input type="radio" name="gender" value="female"> Female<br>
+	<label for="age">Age :</label><input type="number" size=4 required><br>
+	<label for="DOB">Date of Birth :</label><input type="date" ><br>
+	<label for="colour">Favourite colour :</label><input type="color"><br>
+	<label for="country">Which country :</label>
+	<select id="country" name="country">
+	<option value="Select">Please Select</option>
+	<option value="India">India</option>
+	<option value="America">USA</option>
+	<option value="Italy">Italy</option>
+	<option value="UK">UK</option>
+	<option value="France">France</option>
+	</select>
+</fieldset>
+<fieldset>
+	<legend>Your indicators</legend>
+	Height : Short <input type="range" min="0" max="100" >Tall<br>
+	Salary : Poor<input type="range" min="0" max="100" > Rich
+</fieldset>
+	
+<fieldset>
+	<legend>Your Contact Information</legend>
+	<label for="email">Email:<input type="email" required><br>
+	<label for="mobile">Mobile:<input type="tel" ><br>
+	<label for="address">Address:<input type= "text" ><br>
+	<label for="contactmode">Method To Contact :
+	<input type="checkbox" name="email" value="Email">Email
+	<input type="checkbox" name="whatsapp" value="Whatsapp">Whatsapp
+	<input type="checkbox" name="inappchat" value="In-App-Chat">In-App-Chat
+</fieldset>
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>
